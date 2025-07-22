@@ -241,13 +241,16 @@ button i{
 .about {
   display: flex;
   justify-content: space-between;
+  border: 2px solid blueviolet;
   align-items: flex-start;
+  margin: 20px;
   gap: 50px;
   padding: 60px 80px;
   background-color: #0f072d;
   flex-wrap: wrap;
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
 .about-info {
@@ -279,7 +282,10 @@ button i{
   flex: -1;
   text-align: center;
   margin-top: 80px;
+  position: relative;
+  display: inline-block;
 }
+
 
 .my-image img {
   max-width: 100%;
@@ -287,48 +293,89 @@ button i{
   height: auto;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
+   
 }
 
 .my-image img:hover {
   transform: scale(1.05);
 }
-
+.about:hover{
+   transform: scale(0.98);
+}
 /* Responsive Design */
+
+
+.my-image img {
+  max-width: 100%;
+  border: 4px solid blueviolet;
+  width: 250px;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 50%;
+  opacity: 0.7; 
+  transition: transform 0.4s ease, opacity 0.3s ease;
+
+}
+
+.my-image img:hover {
+   transform:scale(1.45);
+   opacity: 1; 
+   border: 4px solid blueviolet;
+   border-radius: 50%;
+
+}
+
+
+/* responsiveness of the about section */
 @media (max-width: 768px) {
   .about {
+    border: none;
     flex-direction: column;
     padding: 40px 20px;
     text-align: center;
+    margin-bottom: 50px;
   }
 
   .about-info {
     max-width: 100%;
   }
+  
+  .about-info h2{
+    display: inline-block;
+    border-bottom: 8px solid blueviolet;
+    width: 200px;
+    margin-right: 25px;
+     white-space: nowrap;
+     text-align: center;
+    
+  }
 
   .about-info p:hover {
     transform: none;
+
+
   }
+    .about-info .para{
+        margin-top: 30px;
+    }
 
   .my-image img {
-    width: 220px;
-    margin-left: 50px;
-    margin-bottom: 100px;
-   
+    width: 250px;
+    height: 280px;
+    margin-left: 40px;
+    /* margin-bottom: 200px; */
+    border-radius: 10%;
+  
+  }
+
+  .my-image{
+      margin-top: 50px;
+  }
+  
+   .my-image img:hover {
+    transform: scale(1.03);
+    border-radius: 10%; 
+ 
   }
 }
-
-.my-image img {
-  max-width: 100%;
-  width: 250px;
-  height: auto;
-  border-radius: 20px;
-  opacity: 0.5; 
-  transition: transform 0.4s ease, opacity 0.3s ease;
-}
-
-.my-image img:hover {
-  transform: scale(1.05);
-  opacity: 1; 
-}
-
