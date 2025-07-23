@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
 *{
 
     margin: 0;
@@ -12,6 +14,9 @@ body{
     color: #333;
     line-height: 1.6;
 } 
+html {
+  scroll-behavior: smooth;
+}
 
 /* Navbar Styles */
 
@@ -238,7 +243,7 @@ button i{
 
 /* about section styling */
 
-.about {
+#about {
   display: flex;
   justify-content: space-between;
   border: 2px solid blueviolet;
@@ -329,7 +334,7 @@ button i{
 
 /* responsiveness of the about section */
 @media (max-width: 768px) {
-  .about {
+  #about {
     border: none;
     flex-direction: column;
     padding: 40px 20px;
@@ -383,13 +388,13 @@ button i{
 
 /* project section styling start here */
 
-.projects {
+#projects {
   padding: 60px 20px;
   text-align: center;
   color: white;
 }
 
-.projects h2 {
+#projects h2 {
   font-size: 36px;
   margin-bottom: 40px;
   color: blueviolet;
@@ -439,7 +444,7 @@ button i{
   line-height: 1.5;
 }
 
-/* Responsive Breakpoints */
+/* Responsive of project section */
 @media (max-width: 768px) {
   .project-item {
     width: 80%;
@@ -461,7 +466,154 @@ button i{
     height: 160px;
   }
 
-  .projects h2 {
+  #projects h2 {
     font-size: 28px;
+  }
+}
+
+
+/* contact section styling */
+.contact-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: blueviolet;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid blueviolet;
+}
+
+.sub-heading {
+  font-size: 20px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.description {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  background-color: #141c33;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #1e2a47;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #2563eb;
+}
+
+.contact-form .email-note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.contact-form .email-note a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  background-color: #141c33;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.icon {
+  color: #3b82f6;
+  margin-right: 10px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 20px;
+  color: #3b82f6;
+  background: #1e2a47;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
   }
 }
