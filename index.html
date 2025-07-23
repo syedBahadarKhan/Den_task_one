@@ -9,22 +9,41 @@
 </head>
 <body>
        <!--navbar start here-->
-    <div clss="navbar">
+    <!-- <div clss="navbar">
         <nav>
             <ul class="nav_items">
-                <li><i class="fa-solid fa-house"></i><a href="#Home">Home</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="#hero">Home</a></li>
                 <li><i class="fa-solid fa-user"></i><a href="#about">About Me</a></li>
                 <li><i class="fa-solid fa-computer"></i><a href="#projects">Projects</a></li>
                 <li><i class="fa-solid fa-file"></i><a href="#">Resume</a></li>
-                <li><i class="fa-solid fa-phone"></i><a href="#">Contacts</a></li>
+                <li><i class="fa-solid fa-phone"></i><a href="#contact">Contacts</a></li>
                 <button><i class="fa-solid fa-code-branch"></i> <i class="fa-regular fa-star"></i></button>
             </ul>
         </nav>
        
+    </div> -->
+
+    <header class="navbar">
+  <div class="nav-container">
+    <h1 class="logo">Bahadar</h1>
+
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
     </div>
 
+    <nav class="nav-menu" id="nav-menu">
+      <ul class="nav-items">
+        <li><a href="#hero"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about"><i class="fa-solid fa-user"></i> About Me</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-computer"></i> Projects</a></li>
+        <li><a href="#resume"><i class="fa-solid fa-file"></i> Resume</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+        <li><button class="nav-btn"><i class="fa-solid fa-code-branch"></i> <i class="fa-regular fa-star"></i></button></li>
+      </ul>
+    </nav>
+  </div>
    <!-- hero section start here -->
-<div class="hero">
+<div id="hero">
   <div class="hero-text">
     <h1>Hi there!</h1>
     <h1>I'm <span>Muhammad Rashid</span></h1>
@@ -99,7 +118,7 @@
 
 
 <!-- contact section -->
- <section class="contact-section" id="contact">
+<section class="contact-section" id="contact">
   <h2>Contact</h2>
   <p class="sub-heading">Connect with me</p>
   <p class="description">
@@ -120,15 +139,15 @@
 
       <button type="submit">Send Message</button>
       <p class="email-note">
-        Or send me email directly at <a href="mailto:yourmail@example.com">bahadardeveloper@gamil.com</a>
+        Or send me email directly at <a href="mailto:yourmail@example.com">bahadardeveloper@gmail.com</a>
       </p>
     </form>
 
     <!-- Right: Contact Info -->
     <div class="contact-info">
       <h3>Contact Information</h3>
-      <p><i class="fas fa-envelope icon"></i>bahadardeveloper@gmail.com</p>
-      <p><i class="fas fa-map-marker-alt icon"></i> Hayatabad phase-3  Peshawar, Pakistan</p>
+      <p><i class="fas fa-envelope icon"></i> bahadardeveloper@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt icon"></i> hayatabad phase 2, Peshawar, Pakistan</p>
 
       <div class="social-icons">
         <a href="#"><i class="fab fa-github"></i></a>
@@ -139,6 +158,41 @@
     </div>
   </div>
 </section>
+
+
+<!-- footer section -->
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>Bahadar Ali</h2>
+      <p>Full Stack Developer | MERN</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Me</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Bahadar Ali. All rights reserved.</p>
+  </div>
+</footer>
 
 
 <script src="index.js"></script>
