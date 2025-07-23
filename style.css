@@ -379,3 +379,89 @@ button i{
  
   }
 }
+
+
+/* project section styling start here */
+
+.projects {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.projects h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: blueviolet;
+  border-bottom: 2px solid blueviolet;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-item {
+  background-color: #2e2e48;
+  border: 2px solid blueviolet;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.project-item:hover {
+   transform: scale(1.09);
+  box-shadow: 0 10px 20px rgba(138, 43, 226, 0.4);
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-item h3 {
+  color: blueviolet;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .project-item {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .project-item img {
+    height: 160px;
+  }
+
+  .projects h2 {
+    font-size: 28px;
+  }
+}
