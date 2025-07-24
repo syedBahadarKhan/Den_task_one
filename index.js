@@ -1,31 +1,22 @@
-// import { animate, stagger } from "motion"
-//  import { animate, stagger } from "https://cdn.jsdelivr.net/npm/motion@12.23.0/+esm"
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
 
-//  animate(".example li", { opacity: 1, y: [50, 0] }, { delay: stagger(0.05) })
-// animate(
-//   "li",
-//   { y: 0, opacity: 1 },
-//   { delay: stagger(0.1) }
-// )
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
 
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("nav-menu");
-
-
-    hamburger.addEventListener("click", function () {
-     
-      navMenu.classList.toggle("show");
-    });
-
-    // Close menu on link click
-    document.querySelectorAll(".nav-items a").forEach(link => {
-      link.addEventListener("click", () => {
-       
-        navMenu.classList.remove("show");
-      });
+  // Close nav when link is clicked (mobile only)
+  document.querySelectorAll(".nav-items a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("show");
     });
   });
+});
+link.addEventListener("click", (e) => {
+  e.preventDefault(); // ⛔ If you do this, you must handle scrolling manually
+});
+
+
+
 
